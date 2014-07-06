@@ -1,26 +1,26 @@
-ReturnsSquareOfRectangle //I`ve used an another program as an example
-========================
-package toS;
+package toString;
 
-public class DogTestDrive {
-public static void main(String[] args){
-	Dog d = new Dog();
-	d.height = 4;
-	d.width = 5;
-	d.bark();
-}
-}
-package toS;
-
-public class Dog {
+public class Rectangle {
 	int width, height;
 	
-	String breed;
-	String name;
-	
-	void bark(){
+	void displayResult(){
 		int res = width * height;
-		System.out.print(res);
+		System.out.print("Площадь вашего прямоугольника равна "+ res);
 	}
 
+}
+package toString;
+
+import java.util.*;
+
+public class RectangleTest {
+public static void main(String[] args){
+	Rectangle d = new Rectangle();
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Введите высоту прямоугольника.");
+	d.height = scanner.nextInt();
+	System.out.println("Введите ширину прямоугольника.");
+	d.width = scanner.nextInt();
+	d.displayResult();
+}
 }
