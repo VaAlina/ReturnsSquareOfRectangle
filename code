@@ -1,0 +1,26 @@
+ReturnsSquareOfRectangle //I`ve used an another program as an example
+========================
+package toS;
+
+public class DogTestDrive {
+public static void main(String[] args){
+	Dog d = new Dog();
+	d.height = 4;
+	d.width = 5;
+	d.bark();
+}
+}
+package toS;
+
+public class Dog {
+	int width, height;
+	
+	String breed;
+	String name;
+	
+	void bark(){
+		int res = width * height;
+		System.out.print(res);
+	}
+
+}
